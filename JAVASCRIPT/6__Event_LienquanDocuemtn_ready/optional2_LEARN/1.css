@@ -1,0 +1,26 @@
+.Chuyendong
+{
+    animation: sangphai 2s forwards;
+}
+@-webkit-keyframes sangphai
+{
+    0%{transform: translateX(0); margin-top: 0px; opacity: 1;}
+    20%{transform: translateX(200px); margin-top: 0px; opacity: 1;}
+    40%{transform: translateX(200px); margin-top: 200px; opacity: 1;}
+    60%{transform: translateX(400px); margin-top: 200px; opacity: 1;}
+    80%{transform: translateX(400px); margin-top: 400px; opacity: 1;}
+    100%{transform: translateX(600px); margin-top: 400px; opacity: 0;}
+}
+.Chuyendonglai
+{
+    animation: lamlai 2s  forwards;
+}
+@-webkit-keyframes lamlai
+{
+    0%{transform: translateX(600px); margin-top: 400px; opacity: 0;}
+    20%{transform: translateX(400px); margin-top: 400px; opacity: 1;}
+    40%{transform: translateX(400px); margin-top: 200px; opacity: 1;}
+    60%{transform: translateX(200px); margin-top: 200px; opacity: 1;}
+    80%{transform: translateX(200px); margin-top: 0px; opacity: 1;}
+    100%{transform: translateX(0); margin-top: 0px; opacity: 1;}
+}

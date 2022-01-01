@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Wendy+One&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 1440px;
+  max-height: 6502px;
+}
+
+.resetPaddingMargin, body .Container__header .Container__item-header,
+html .Container__header .Container__item-header {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  background-image: url("http://127.0.0.1:5500/img/Backgroud/bg1.png");
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 100px) {
+  body .Container__item-header,
+  html .Container__item-header {
+    display: none;
+  }
+  body .Container__groud1 .resetPg,
+  html .Container__groud1 .resetPg {
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+  }
+  body .Container__groud1 .resetPg .setUpGroud1,
+  html .Container__groud1 .resetPg .setUpGroud1 {
+    margin-top: 63px;
+    width: 319px;
+    height: 322px;
+  }
+  body .Container__groud1 .resetPg .setUpGroud1 .groud__header,
+  html .Container__groud1 .resetPg .setUpGroud1 .groud__header {
+    padding-left: 19px;
+  }
+  body .Container__groud1 .resetPg .setUpGroud1 .groud__header h1,
+  html .Container__groud1 .resetPg .setUpGroud1 .groud__header h1 {
+    font-family: 'Wendy One', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 63px;
+    color: #642C99;
+    width: 319px;
+    height: 150px;
+    margin-bottom: 0;
+  }
+  body .Container__groud1 .resetPg .setUpGroud1 .groud__header p,
+  html .Container__groud1 .resetPg .setUpGroud1 .groud__header p {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    color: #642C99;
+    max-width: 519px;
+    width: 334px;
+    height: 84px;
+    margin-bottom: 46px;
+  }
+  body .Container__groud1 .resetPg .setUpGroud1 .groud__header button,
+  html .Container__groud1 .resetPg .setUpGroud1 .groud__header button {
+    font-family: "Lato", sans-serif;
+    background: #642C99;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FBFAC9;
+    width: 206px;
+    height: 43px;
+    border: none;
+  }
+  body .Container__groud1 .resetPg .setUpGroud2,
+  html .Container__groud1 .resetPg .setUpGroud2 {
+    margin: 47px 0px 0px 82px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 266px;
+    height: 356px;
+    background-image: url("http://127.0.0.1:5500/img/ReponsiveMobile/image 56.png");
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  body .Container__item-header,
+  html .Container__item-header {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body .Container__item-header,
+  html .Container__item-header {
+    display: none;
+  }
+  body .Container__groud1,
+  html .Container__groud1 {
+    margin: 67px 0px 0px 126px;
+  }
+  body .Container__groud1 .resetPg .setUpGroud1,
+  html .Container__groud1 .resetPg .setUpGroud1 {
+    margin-top: 63px;
+    width: 632px;
+    height: 425px;
+  }
+  body .Container__groud1 .resetPg .setUpGroud1 .groud__header h1,
+  html .Container__groud1 .resetPg .setUpGroud1 .groud__header h1 {
+    font-size: 120px;
+    line-height: 127px;
+    width: 632px;
+    height: 292px;
+  }
+  body .Container__groud1 .resetPg .setUpGroud1 .groud__header p,
+  html .Container__groud1 .resetPg .setUpGroud1 .groud__header p {
+    width: 519px;
+    height: 44px;
+  }
+  body .Container__groud1 .resetPg .setUpGroud1 .groud__header button,
+  html .Container__groud1 .resetPg .setUpGroud1 .groud__header button {
+    width: 306px;
+    height: 43px;
+  }
+  body .Container__groud1 .resetPg .setUpGroud2,
+  html .Container__groud1 .resetPg .setUpGroud2 {
+    padding-left: 10px;
+    height: 743px;
+    width: 532px;
+    background-image: url("http://127.0.0.1:5500/img/Image/image95.png");
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  body .Icon,
+  html .Icon {
+    display: none;
+  }
+  body .Container__item-header,
+  html .Container__item-header {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body .Icon,
+  html .Icon {
+    display: none;
+  }
+  body .Container__item-header,
+  html .Container__item-header {
+    display: block;
+  }
+}
+
+body .Container__header .Icon,
+html .Container__header .Icon {
+  margin-top: 22px;
+  margin-left: 19px;
+}
+
+body .Container__header .Icon p,
+html .Container__header .Icon p {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  width: 170px;
+  height: 25px;
+  line-height: 22px;
+  color: #642C99;
+}
+
+body .Container__header .Container__item-header,
+html .Container__header .Container__item-header {
+  margin: 29px 0px 0px 43px;
+}
+
+body .Container__header .Container__item-header .text1,
+html .Container__header .Container__item-header .text1 {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  width: 63px;
+  height: 25px;
+  line-height: 22px;
+  font-weight: 900;
+  color: #642C99;
+  padding-right: 0;
+}
+
+body .Container__header .Container__item-header .text1 p,
+html .Container__header .Container__item-header .text1 p {
+  margin-bottom: 0;
+}
+
+body .Container__header .Container__item-header .text2,
+html .Container__header .Container__item-header .text2 {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  width: 101px;
+  height: 25px;
+  line-height: 22px;
+  color: #642C99;
+  padding: 0px 0px 0px 6px;
+}
+
+body .Container__header .Container__item-header .text2 p,
+html .Container__header .Container__item-header .text2 p {
+  margin-bottom: 0;
+}
+
+body .Container__header .Container__item-header .text3,
+html .Container__header .Container__item-header .text3 {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  width: 170px;
+  height: 25px;
+  line-height: 22px;
+  color: #642C99;
+  padding: 0px 0px 0px 6px;
+}
+
+body .Container__header .Container__item-header .text3 p,
+html .Container__header .Container__item-header .text3 p {
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=main.css.map */

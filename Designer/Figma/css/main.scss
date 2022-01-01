@@ -1,0 +1,411 @@
+@import url( 'https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url( 'https://fonts.googleapis.com/css2?family=Wendy+One&display=swap');
+$color1: #642C99;
+$color2: #FBFAC9;
+$FontStyle: 'Lato', sans-serif;
+$DefaultFontStyle: normal;
+$FontStyleWendy: 'Wendy One', sans-serif;
+@mixin DeFaultFontStyleAndweight {
+    font-style: normal;
+    font-weight: normal;
+}
+@mixin nhomgoncss($font,$size,$style,$w,$h,$lh) {
+    font-family: $font;
+    font-size: $size;
+    font-style: $style;
+    width: $w;
+    height: $h;
+    line-height: $lh;
+}
+
+
+* {
+    box-sizing: border-box;
+    max-width: 1440px;
+    max-height: 6502px;
+}
+.resetPaddingMargin {
+    margin: 0;
+    padding: 0;
+}
+body,
+html {
+    background-image: url('http://127.0.0.1:5500/img/Backgroud/bg1.png');
+    background-repeat: no-repeat;
+    @media only screen and (min-width: 100px) {
+        .Container__item-header 
+        {
+            display: none;
+        }
+          // Group1
+          .Container__groud1 {
+            .resetPg {
+                height: auto;
+                padding: 0px;
+                margin: 0px;
+                .setUpGroud1 {
+                    margin-top: 63px;
+                    width: 319px;
+                    height: 322px;
+                    .groud__header {
+                        padding-left: 19px;
+                        h1 {
+                            font-family: 'Wendy One', sans-serif;
+                            @include DeFaultFontStyleAndweight;
+                            font-size: 60px;
+                            line-height: 63px;
+                            color: $color1;
+                            width: 319px;
+                            height: 150px;
+                            margin-bottom: 0;
+                        }
+                        p {
+                            font-family: $FontStyle;
+                            @include DeFaultFontStyleAndweight;
+                            font-size: 18px;
+                            line-height: 26px;
+                            color: $color1;
+                            max-width: 519px;
+                            width: 334px;
+                            height: 84px;
+                            margin-bottom: 46px;
+                        }
+                        button {
+                            font-family: $FontStyle;
+                            background: $color1;
+                            border-radius: 8px;
+                            @include DeFaultFontStyleAndweight;
+                            font-size: 16px;
+                            line-height: 19px;
+                            text-align: center;
+                            color: $color2;
+                            width: 206px;
+                            height: 43px;
+                            border: none;
+                        }
+                    }
+                }
+                .setUpGroud2 {
+                    margin: 47px 0px 0px 82px;
+                    padding-left: 0px;
+                    padding-right: 0px;
+                    width: 266px;
+                    height: 356px;
+                    background-image: url('http://127.0.0.1:5500/img/ReponsiveMobile/image 56.png');
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: 576px) {
+        .Container__item-header 
+        {
+            display: none;
+        }
+    }
+    @media only screen and (min-width: 768px) {
+        .Container__item-header 
+        {
+            display: none;
+        }
+         // Group1
+        .Container__groud1 {
+            margin: 67px 0px 0px 126px;
+            .resetPg {
+                .setUpGroud1 {
+                    margin-top: 63px;
+                    width: 632px;
+                    height: 425px;
+                    .groud__header {
+                        h1 {
+                            font-size: 120px;
+                            line-height: 127px;
+                            width: 632px;
+                            height: 292px;
+                        }
+                        p {
+                            width: 519px;
+                            height: 44px;
+                        }
+                        button {
+                            width: 306px;
+                            height: 43px;
+                        }
+                    }
+                }
+                .setUpGroud2 {
+                    padding-left: 10px;
+                    height: 743px;
+                    width: 532px;
+                    background-image: url('http://127.0.0.1:5500/img/Image/image95.png');
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: 992px) {
+        .Icon
+        {
+            display: none;
+        }
+        .Container__item-header 
+        {
+            display: block;
+        }
+    }
+    @media only screen and (min-width: 1200px) {
+        .Icon
+        {
+            display: none;
+        }
+        .Container__item-header 
+        {
+            display: block;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+    .Container__header {
+        .Icon
+        {
+            margin-top: 22px;
+            margin-left: 19px;
+            p
+            {
+                @include nhomgoncss($FontStyle,18px,$DefaultFontStyle,170px,25px,22px);
+                color: $color1;
+            }
+        }
+        .Container__item-header {
+            margin: 29px 0px 0px 43px;
+            .text1 {
+                @include nhomgoncss($FontStyle,18px,$DefaultFontStyle,63px,25px,22px);
+                font-weight: 900;
+                color: $color1;
+                padding-right: 0;
+                p {
+                    margin-bottom: 0;
+                }
+            }
+            .text2 {
+                @include nhomgoncss($FontStyle,18px,$DefaultFontStyle,101px,25px,22px);
+                color: $color1;
+                padding: 0px 0px 0px 6px;
+                p {
+                    margin-bottom: 0;
+                }
+            }
+            .text3 {
+                @include nhomgoncss($FontStyle,18px,$DefaultFontStyle,170px,25px,22px);
+                color: $color1;
+                padding: 0px 0px 0px 6px;
+                p {
+                    margin-bottom: 0;
+                }
+            }
+            @extend .resetPaddingMargin;
+        }
+
+    }
+
+
+
+    // .Container__groud3 {
+    //     height: 171px;
+    //     margin: 455px 0px 0px 124px;
+    //     .resetPg3 {
+    //         @extend .resetPaddingMargin;
+    //         .groud__header {
+    //             h1 {
+    //                 width: 661px;
+    //                 height: 177px;
+    //                 font-family: 'Wendy One', sans-serif;
+    //                 @include DeFaultFontStyleAndweight;
+    //                 font-size: 90px;
+    //                 line-height: 95px;
+    //                 color: #642C99;
+    //             }
+    //         }
+    //     }
+    // }
+    // .Container__groud4 {
+    //     margin: 207px 0px 0px 106px;
+    //     .resetPg4,
+    //     .setUpGroud4__4 {
+    //         @extend .resetPaddingMargin;
+    //         .groud__content {
+    //             img {
+    //                 text-align: center;
+    //             }
+    //             h2 {
+    //                 font-family: 'Wendy One', sans-serif;
+    //                 @include DeFaultFontStyleAndweight;
+    //                 font-size: 32px;
+    //                 line-height: 34px;
+    //                 height: 34px;
+    //                 /* identical to box height */
+    //                 margin: 46px 0px 0px 0px;
+    //                 color: #642C99;
+    //             }
+    //             p {
+    //                 height: 40px;
+    //                 margin-top: 34px;
+    //                 margin-bottom: 0;
+    //                 font-family: Lato;
+    //                 @include DeFaultFontStyleAndweight;
+    //                 font-size: 16px;
+    //                 line-height: 24px;
+    //                 /* or 150% */
+    //                 color: #642C99;
+    //                 padding: 0px 68px 0px 68px;
+    //             }
+    //         }
+    //         .groud__end {
+    //             margin-top: 38px;
+    //             .groud__footer {
+    //                 margin-top: 38px;
+    //                 border: 3px solid #642C99;
+    //                 box-sizing: border-box;
+    //                 border-radius: 8px;
+    //                 .groud__footer-down,
+    //                 .groud__footer-up {
+    //                     color: $color1;
+    //                 }
+    //                 .groud__footer-couter {
+    //                     font-family: $FontStyle;
+    //                     font-style: normal;
+    //                     font-weight: 900;
+    //                     font-size: 20px;
+    //                     line-height: 27px;
+    //                     text-transform: uppercase;
+    //                     color: #642C99;
+    //                     padding: 0px 23px 0px 23px;
+    //                 }
+    //             }
+    //             .button__footer-card {
+    //                 button {
+    //                     background: #642C99;
+    //                     margin-left: 30px;
+    //                     width: 206px;
+    //                     height: 30px;
+    //                     border-radius: 8px;
+    //                     border: none;
+    //                     font-family: $FontStyle;
+    //                     @include DeFaultFontStyleAndweight;
+    //                     font-size: 16px;
+    //                     line-height: 19px;
+    //                     text-align: center;
+    //                     text-transform: uppercase;
+    //                     color: $color2;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    // .Container__footer
+    // {
+    //     .resetFooter
+    //     {
+    //         @extend .resetPaddingMargin;
+    //         .footernamepage
+    //         {
+    //             margin-left: 19px;
+    //             font-family: 'Wendy One', sans-serif;
+    //             @include DeFaultFontStyleAndweight;
+    //             font-size: 32px;
+    //             line-height: 34px;
+    //             color: #FDEFD1;
+    //         }
+    //         .footerMenu
+    //         {
+    //             ul
+    //             {
+    //                 list-style-type: none;
+    //                 @extend .resetPaddingMargin;
+    //                 li
+    //                 {
+    //                     height: 37px;
+    //                     font-family: $FontStyle;
+    //                     font-style: $DefaultFontStyle;
+    //                     font-weight: bold;
+    //                     font-size: 18px;
+    //                     line-height: 30px;
+    //                     /* or 167% */
+    //                     color: #FDEFD1;
+
+    //                 }
+    //             }
+    //         }
+    //         .footerInput
+    //         {
+    //             label
+    //             {
+    //                 width: 160px;
+    //                 height: 30px;
+    //                 font-family: $FontStyle;
+    //                 font-style: $DefaultFontStyle;
+    //                 font-weight: bold;
+    //                 font-size: 18px;
+    //                 line-height: 30px;
+    //                 /* identical to box height, or 167% */
+    //                 color: #FDEFD1;
+    //                 margin-bottom: 30px;
+    //             }
+    //             .gom
+    //             {
+    //                 input 
+    //                 {
+    //                     width: 394px;
+    //                     height: 43px;
+    //                     border: 2px solid #FDEFD1;
+    //                     box-sizing: border-box;
+    //                     border-radius: 8px;
+    //                     font-family: $FontStyle;
+    //                     padding-left: 32px;
+    //                     background-color: #fdefd100;
+    //                     font-style: $DefaultFontStyle;
+    //                     font-weight: bold;
+    //                     font-size: 16px;
+    //                     line-height: 30px;
+    //                     /* or 187% */
+    //                     color: #FDEFD1;
+    //                 }
+    //                 button
+    //                 {
+    //                     margin-left: 32px;
+    //                     font-family: $FontStyle;
+    //                     font-style: $DefaultFontStyle;
+    //                     font-weight: normal;
+    //                     font-size: 16px;
+    //                     line-height: 19px;
+    //                     /* identical to box height */
+    //                     text-transform: uppercase;
+    //                     color: #642C99;
+    //                     background: #FDEFD1;
+    //                     border-radius: 8px;
+    //                     border: none;
+    //                     height: 43px;                    }
+    //             }
+    //         }
+          
+    //     }
+    // }
+    // .Container__footer-end
+    // {
+    //     .changeSize
+    //     {
+    //         @include nhomgoncss($FontStyle,18px,$DefaultFontStyle,216px,49px,48px);
+    //         font-weight: bold;
+    //         /* or 267% */
+    //         color: #FDEFD1;
+
+    //     }
+    // }
+}

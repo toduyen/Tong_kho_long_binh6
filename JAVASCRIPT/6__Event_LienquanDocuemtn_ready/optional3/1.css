@@ -1,0 +1,17 @@
+.box-down{
+  width: 0; 
+  height: 0; 
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid black;
+}
+.chuyenMauNut
+{
+  width: 0; 
+  height: 0; 
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid white;
+}
+.an{visibility: hidden; opacity: 0;}
+.hien{visibility: visible; opacity: 1;}

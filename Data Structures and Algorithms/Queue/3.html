@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <script>
+        function thaotac() {
+            this.store = [];
+            this.themmoi = function (ele) {
+                return this.store.push(ele);
+            }
+            this.laydau = function () {
+                return this.store.shift();
+            }
+            this.hienthi = function () {
+                return this.store;
+            }
+            this.isEpty = function () {
+                return this.store.length;
+            }
+        }
+        function numberLucky(mang , solan) {
+            var qq = new thaotac();
+            for(let i = 0 ; i<mang.length ; i++)
+            {
+                qq.themmoi(mang[i]);
+            }
+            let temp = ``;
+            while(qq.isEpty() > 1)
+            {
+                for(let i = 0 ; i< solan ; i++)
+                {
+                    qq.themmoi(qq.laydau());
+                }
+                temp = qq.laydau();
+                console.log(`hien thi phan tu cuoi cung ${temp}`);
+            }
+            return qq.hienthi();
+        }
+    </script>
+</body>
+</html>

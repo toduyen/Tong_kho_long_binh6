@@ -1,0 +1,79 @@
+*{padding: 0px; margin: 0px;}
+.nutbam ul li
+{
+    list-style-type: none;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-indent: -9999px;
+    border: 2px solid white;
+    border-radius: 50px;
+    transition: 0.4s;
+    cursor: pointer;
+
+}
+.nutbam
+{
+    position: relative;
+    top: 120px;
+}
+.nutbam ul li:hover
+{
+    background-color: black;
+}
+.nutbam ul
+{
+    margin-top: 20px;
+    text-align: center;
+}
+.nutbam ul > .active
+{
+    background-color: white;
+}
+.motside ul li .hianh > img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+.hianh
+{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+.motside ul li .hianh > h5 , small , .borderLineDown , p
+{
+    top: 10px;
+    left: 650px;
+    z-index: 2;
+    color: white;
+    position: absolute;
+}
+.motside ul li .hianh >  small
+{
+    top: 80px;
+    color: white;
+}
+.borderLineDown
+{
+    top: 120px;
+    width: 120px;
+    height: 2px;
+    border: 1px solid white;
+}
+.motside ul li .hianh > p
+{
+    top: 140px;
+    max-width: 300px;
+}
+.motside ul > .hidden
+{
+    opacity: 1;
+    transition: 1s;
+}
+.motside ul li
+{
+    opacity: 0;
+}

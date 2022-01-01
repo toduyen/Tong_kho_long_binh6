@@ -1,0 +1,19 @@
+.codan
+{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0px;
+    transition: 0.4s;
+}
+.antheo
+{
+    position: relative;
+    top: 140px;
+}
+.covao
+{
+    height: 100px;
+    transition: 0.4s;
+    transform: translateY(5px);
+}
